@@ -1,0 +1,22 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100%;
+}
+.all{
+    width: 100%;
+    background-color: aquamarine;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+
+}
+.seleccion{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
