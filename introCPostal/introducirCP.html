@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meteo App</title>
+    <link rel="stylesheet" href="introducirCP.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/introCPostal/introducirCP.js"> </script>
+    <script src="introducirCP.js"> </script>
 </head>
 <body>
-    <label>Codigo Postal</label>
-    <input id="cp" type="text" name="codPostal"/>
-    <button type="button" onclick="postalcode()" class="btn">Basic</button>
 
-    <div>
-        <ul id="contenido"></ul>
-    </div>
+    <header>
+        <div class="intoduccionHead">
+            <h1>¿Quieres saber la temperatura según tu Código Postal?</h1>
+            <p>Si vives en España y quieres saber la temperatura máxima y mínima 
+            según el código postal donde vives, simplemente introducelo a continuación</p>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="seleccion">
+                
+            <label>Codigo Postal</label>
+            <input id="cp" type="text" name="codPostal"/>
+            <button type="button" onclick="postalcode()" class="btn">Basic</button>
+    
+        </div>
+        <div class="temperaturas">
+            <ul id="contenido"></ul>
+        </div>
+    </main>
+    <footer>
+        <div class="enviarInfo">
+        <h3><a href="https://www.correos.es/ss/Satellite/site/Aplicacion_C-1349167812778-1363184049882/includeTemplate=COR_Aplicacion-sidioma=es_ES">¿No sabes cual es tu Código Postal?</a></h3>
+        </div>
+    </footer>
 </body>
 </html>

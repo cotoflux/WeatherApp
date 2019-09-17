@@ -24,9 +24,9 @@ function recibirData(){
     .done(function(response){
         console.log(response);
         let cnt = "";
-        cnt +="<li>Coords: "+response["coord"]["lat"]+" long: "+response["coord"]["lon"]+"</li>";
-        cnt +="<li>Temperatura: "+response["main"]["temp_max"]+"</li>";
-        cnt +="<li>Temperatura: "+response["main"]["temp_min"]+"</li>";
+        cnt +="<li>Coordenadas: "+response["coord"]["lat"]+" long: "+response["coord"]["lon"]+"</li>";
+        cnt +="<li>Temperatura MAXIMA: "+response["main"]["temp_max"]+"</li>";
+        cnt +="<li>Temperatura MINIMA: "+response["main"]["temp_min"]+"</li>";
         contenido.innerHTML += cnt;
    
 

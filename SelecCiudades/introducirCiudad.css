@@ -5,18 +5,38 @@
 }
 body{
     min-width: 100%;
+    font-size: 20px;
 }
-.all{
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.intoduccionHead p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.temperaturas{
     width: 100%;
     background-color: aquamarine;
 	display: flex;
     justify-content: center;
 	align-items: center;
-
+    margin-top: 2rem;
 }
 .seleccion{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-	align-items: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.enviarInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }

@@ -10,14 +10,26 @@
     <script src="introducirCiudad.js"> </script>
 </head>
 <body>
-    <div class="seleccion">
-        <label>Selecciona tu ciudad</label>
-        <input id="ciudad" type="text" name="codPostal"/>
-        <button type="button" onclick="postalcode()" class="btn">Basic</button>
-    </div>
+    <header>
+        <div class="intoduccionHead">
+            <h1>¿Quieres saber la temperatura de tu Ciudad?</h1>
+            <p>Si vives en España y quieres saber la temperatura máxima y mínima 
+            de tu ciudad, simplemente introducela a continuación</p>
+            </p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="seleccion">
+            <label>Selecciona tu ciudad</label>
+            <input id="ciudad" type="text" name="codPostal"/>
+            <button type="button" onclick="postalcode()" class="btn">Basic</button>
+        </div>
 
-    <div class="all">
-        <ul id="contenido"></ul>
-    </div>
+        <div class="temperaturas">
+            <ul id="contenido"></ul>
+        </div>
+
+    </main>
 </body>
 </html>
