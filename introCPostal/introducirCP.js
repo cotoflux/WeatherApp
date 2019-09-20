@@ -1,6 +1,27 @@
-//https://openweathermap.org/data/2.5/weather?zip=08190,es&
+var key;
+/* var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    key=myObj[0].key;
+  }
+};
+xmlhttp.open("GET", "../key.json", true);
+xmlhttp.send();
+ */
+$.ajax({
+    //Cambiar a type: POST si necesario
+    type: "GET",
+    // Formato de datos que se espera en la respuesta
+    dataType: "json",
+    // URL a la que se enviará la solicitud Ajax
+    url: "../key.json",
+})
+.done(function(response){
+    key=response[0].key;
+    console.log(response);
+});
 
-//&appid=b6907d289e10d714a6e88b30761fae22
 var url="";
 console.log(url);
 
