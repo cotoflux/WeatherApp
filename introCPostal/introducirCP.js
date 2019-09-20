@@ -29,7 +29,7 @@ console.log(url);
 function postalcode($cp){
     let valor = document.getElementById("cp").value;
     console.log("valor: ", valor);
-    url="https://openweathermap.org/data/2.5/weather?zip="+valor+",es&appid=b6907d289e10d714a6e88b30761fae22";
+    url="https://openweathermap.org/data/2.5/weather?zip="+valor+",es&appid="+key;
     recibirData();
 
 }
